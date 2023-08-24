@@ -1,0 +1,49 @@
+{{- if eq .location "work" }}
+brew "vim"
+brew "git"
+brew "htop"
+brew "node"
+brew "nvm"
+brew "python@3.9"
+brew "tree"
+brew "jq"
+brew "wget"
+brew "imagemagick"
+
+brew "google-chrome"
+brew "bitwarden"
+brew "readdle-spark"
+brew "notion"
+brew "visual-studio-code"
+brew "iterm2"
+brew "logi-options-plus"
+
+brew "slack"
+brew "mongodb-compass"
+brew "zoom"
+{{- end }}
+
+{{- if eq .location "personal" }}
+brew "git"
+brew "vim"
+brew "htop"
+brew "node"
+brew "nvm"
+brew "python@3.9"
+brew "tree"
+brew "jq"
+brew "wget"
+brew "imagemagick"
+
+brew "google-chrome"
+brew "bitwarden"
+brew "readdle-spark"
+brew "notion"
+brew "visual-studio-code"
+brew "iterm2"
+brew "logi-options-plus"
+
+brew "discord"
+brew "spotify"
+brew "youtube-dl"
+{{- end }}

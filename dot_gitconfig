@@ -1,0 +1,31 @@
+[user]
+  name = Roger Yang
+  email = rogeryang44@gmail.com
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[alias]
+  co = checkout
+  cob = checkout -b
+  cp = cherry-pick
+  f = fetch -p
+  c = commit
+  p = push
+  ba = branch -a
+  bd = branch -d
+  bD = branch -D
+  dc = diff --cached
+  st = status -sb
+  a = add -p
+  adog = log --all --decorate --oneline --graph
+  discard = checkout --
+  wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+  alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+[core]
+  editor = code --wait
+	
