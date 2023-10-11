@@ -18,6 +18,7 @@
   p = push
   ba = branch -a
   bd = branch -d
+  bm = branch -m
   bD = branch -D
   dc = diff --cached
   st = status -sb
